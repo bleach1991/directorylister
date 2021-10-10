@@ -221,67 +221,6 @@ $breadcrumbs = $lister->listBreadcrumbs();
             document.body.scrollTop = document.documentElement.scrollTop = scrollTop - 50;
         });
     </script>
-
-    <!-- Valine https://valine.js.org/configuration.html -->
-    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-    <script>
-        new Valine({
-            el: '#vcomments',
-            appId: 'm9S5QXsdju39LvMs8ooRRIiF-MdYXbMMI',
-            appKey: 'UfBRjySkb4bjPiFuH0Pxe3a9',
-            placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
-            notify: true, // 邮件提醒
-            verify: false, // 验证码服务
-            // 当前文章页路径，用于区分不同的文章页，以保证正确读取该文章页下的评论列表。
-            path: window.location.href,
-            visitor: true, // 文章访问量统计
-            recordIP: true, // 是否记录评论者IP
-        });
-
-        // 来必力 https://www.livere.com
-        /*(function (d, s) {
-            var j, e = d.getElementsByTagName(s)[0];
-            if (typeof LivereTower === 'function') {
-                return;
-            }
-            j = d.createElement(s);
-            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-            j.async = true;
-            e.parentNode.insertBefore(j, e);
-        })(document, 'script');*/
-
-        // Gitalk unpkg.com/docsify/lib/plugins/gitalk.min.js
-        /*const gitalk = new Gitalk({
-            clientID: '40cfe11992c4ef076a4b',
-            clientSecret: 'b43dc6b3740a306bec40c25c2db1ecc6c02e7716',
-            repo: 'woytu.github.io',
-            owner: 'woytu',
-            admin: ['woytu'],
-            // facebook-like distraction free mode
-            distractionFreeMode: false
-        });*/
-
-        // Gitment https://imsun.net/posts/gitment-introduction/
-        /*var gitment = new Gitment({
-            //id: '页面 ID', // 可选。默认为 location.href
-            owner: 'woytu',
-            repo: 'woytu.github.io',
-            oauth: {
-                client_id: '40cfe11992c4ef076a4b',
-                client_secret: 'b43dc6b3740a306bec40c25c2db1ecc6c02e7716',
-            },
-        });*/
-    </script>
-
-    <!-- https://gitter.im -->
-    <script>
-        ((window.gitter = {}).chat = {}).options = {
-            //room替换成自己的聊天室名称即可，room的名称规则是：username/roomname
-            room: 'woytu/community'
-        };
-    </script>
-    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-
 </body>
 
 </html>
