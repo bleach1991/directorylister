@@ -27,7 +27,8 @@ return array(
         '*/README.*',
         'README.*',
         'admin',
-        '*.xml'
+        '*.xml',
+        'LICENSE'
     ),
 
     // Files that, if present in a directory, make the directory
